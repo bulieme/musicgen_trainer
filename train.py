@@ -100,6 +100,7 @@ def one_hot_encode(tensor, num_classes=2048):
 
 def train(
     dataset_path: str,
+    model_save_path: str = ./models/,
     model_id: str,
     lr: float,
     epochs: int,
@@ -157,7 +158,7 @@ def train(
     save_step = save_step
     save_models = False if save_step is None else True
 
-    save_path = "models/"
+    save_path = model_save_path
 
     os.makedirs(save_path, exist_ok=True)
 
