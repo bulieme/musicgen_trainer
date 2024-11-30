@@ -21,6 +21,7 @@ args = parser.parse_args()
 
 train(
     dataset_path=args.dataset_path,
+    model_save_path=args.model_save_path,
     model_id=args.model_id,
     lr=args.lr,
     epochs=args.epochs,
