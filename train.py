@@ -244,7 +244,7 @@ def train(
                 )
 
             print(
-                f"Epoch: {epoch}/{num_epochs}, Steps: {current_step}, Batch: {batch_idx}/{len(train_dataloader)}, Loss: {loss.item()}"
+                f"Steps: {current_step:.2f}, Epoch: {epoch}/{num_epochs}, Batch: {batch_idx}/{len(train_dataloader)}, Loss: {loss.item()}"
             )
 
             if batch_idx % grad_acc != grad_acc - 1:
